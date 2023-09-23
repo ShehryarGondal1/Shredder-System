@@ -2,6 +2,19 @@ import cv2
 from playsound import playsound
 import pandas as pd
 
+import os
+from playsound import playsound
+
+# Use raw string literal for the path
+file_path = r'D:\JupyterNotebook\PW_Skills_Data_Science\alert.wav'
+# Play the sound
+#playsound(file_path)
+
+
+# Play the sound
+
+
+
 #crossed=0
 
 def drawboxtosafeline(image_np,p1,p2,Line_Position2,Orientation):
@@ -34,12 +47,15 @@ def drawboxtosafeline(image_np,p1,p2,Line_Position2,Orientation):
              posii=int(image_np.shape[1]/2)        
              cv2.putText(image_np, "ALERT", (posii, 50),cv2.FONT_HERSHEY_SIMPLEX, 0.75, (255, 0,0), 2)
 			 #sound = os.path.join()
-             playsound(r"D:\JupyterNotebook\PW_Skills_Data_Science\Deep Learning\Deep Learning Project\Shredder System Project-20230921T161932Z-001\Shredder System Project\shreddersystem\utils\alert.wav")
+             #playsound(r"utils\alert.wav")
+             playsound(file_path)
              cv2.rectangle(image_np, (posii-20,20), (posii+85,60), (255,0,0), thickness=3, lineType=8, shift=0)
              #to write into xl-sheet            
              return 1
     else:
         return 0
+    
+    
     
    
 

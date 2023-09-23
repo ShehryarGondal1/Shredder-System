@@ -76,7 +76,7 @@ This project is licensed under the MIT License, which means you are free to use 
 
 ### Results
 
-
+<img src="Download1.png" alt="workflow" width="100%" > <br>
 
 ### AUTHOR
 <hr>
